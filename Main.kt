@@ -4,9 +4,8 @@ fun main() {
             print("Enter a word to check if it's a palindrome: ")
             readln().lowercase().toList()
         }
-        val wordBack = word.reversed()
 
-        if (word == wordBack) {
+        if (word == word.reversed()) {
             println("${word.joinToString("")} is a palindrome")
         } else {
             println("${word.joinToString("")} is not a palindrome")
